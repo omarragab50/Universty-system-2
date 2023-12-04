@@ -561,3 +561,95 @@ animation: bouncing 1.5s infinite;
    color: var(--main-color);
 }
 /* End Books */
+/* Start Discount */
+.discount {
+   min-height: 100vh;
+   display: flex;
+   flex-wrap: wrap;
+   padding-bottom: 50px;
+}
+.discount .image {
+   background-size: cover;
+   color: white;
+   flex-basis: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   z-index: 1;
+}
+@media (max-width: 991px) {
+   .discount .image {
+   flex-basis: 100%;
+   }
+}
+.discount .form {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-basis: 50%;
+   width: 825px;
+}
+@media (max-width: 991px) {
+   .discount .form {
+   flex-basis: 100%;
+   }
+}
+.discount .form .input {
+   display: block;
+   width: 100%;
+   margin-bottom: 25px;
+   padding: 15px;
+   border: none;
+   border-radius: 8px;
+   border-bottom: 1px solid #ccc;
+   background-color: #f9f9f9;
+   caret-color: var(--main-color);
+}
+.discount .form textarea.input {
+   resize: none;
+   height: 200px;
+}
+.discount .form .input:focus {
+   outline: none;
+}
+.discount .form [type="submit"] {
+   display: block;
+   width: 100%;
+   padding: 15px;
+   background-color: var(--main-color);
+   color: white;
+   font-weight: bold;
+   font-size: 20px;
+   border: none;
+   cursor: pointer;
+   transition: var(--main-transition);
+   border-radius: 19px;
+   background: #9E1338;
+}
+.discount .form [type="submit"]:hover {
+   background-color: var(--main-color);
+}
+.discount .form .content {
+   text-align: center;
+   width: 450px;
+   padding: 30px 20px;
+   border-radius: 32px;
+   background: linear-gradient(180deg, rgba(158, 19, 56, 0.20) 1.38%, rgba(255, 221, 121, 0.20) 99.64%);
+   backdrop-filter: blur(0px);
+}
+@media (max-width: 991px) {
+   .discount .form .content{
+   width: 400px;
+   }
+}
+.discount .content img {
+   width: 500px;
+   max-width: 100%;
+}
+@media (max-width: 991px) {
+   .discount .content img {
+   width: 350px;
+   }
+}
+ /* End Discount */
