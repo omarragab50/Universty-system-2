@@ -79,12 +79,14 @@ ul {
    display: flex;
    justify-content: center;
    align-items: center;
+   position: relative;
 }
 @media (max-width: 767px) {
    .header .logo {
       width: 100%;
       height: 50px;
       font-size: 50px;
+      right: 100px;
    }
 }
 @media (max-width: 767px) {
@@ -121,8 +123,9 @@ ul {
 @media (max-width: 767px) {
    .header .main-nav > li > a {
       padding: 10px;
-      font-size: 14px;
+      font-size: 16px;
       height: 40px;
+      bottom: -40px;
    }
 }
 .header .main-nav > li > a::before {
@@ -218,6 +221,105 @@ font-weight: bold;
 .header .mega-menu .links li a i {
 margin-right: 10px;
 }
+/* user pic */
+.user-pic {
+   width: 50px;
+   position: relative;
+}
+@media (max-width: 767px) {
+   .user-pic {
+      left: 300px;
+      top: -84px;
+   }
+}
+
+.sub-menu-wrap {
+   position: absolute ;
+   top: 100%;
+   right: 1%;
+   width: 320px;
+   max-height: 0px;
+   overflow: hidden;
+   z-index: 3;
+   transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+   max-height: 400px;
+}
+
+.sub-menu {
+   background: #fff;
+   padding: 20px;
+   margin: 4px;
+   }
+
+   .user-info {
+      display: flex;
+      align-items: center;
+   }
+   
+   .user-info h2 {
+      font-weight: 500;
+   }
+   
+   .user-info img {
+      width: 40px;
+      border-radius: 50%;
+      margin-right: 15px;
+   }
+   
+   .sub-menu hr {
+      border: 0;
+      height: 1px;
+      width: 100%;
+      background: #ccc;
+      margin: 15px 0 10px;
+   }
+   
+   .sub-menu-link img {
+      width: 50px;
+      border-radius: 50%;
+      padding: 8px;
+      margin-right: 15px;
+      background: #ccc;
+   }
+   
+   .sub-menu-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #525252;
+      margin: 12px 0;
+   }
+
+   .sub-menu-link p {
+      width: 100%;
+   }
+   
+   .sub-menu-link span {
+      font-size: 22px;
+      transition: 0.5s;
+   }
+   
+   .sub-menu-link:hover span {
+      transform: translateX(5px);
+   }
+   
+   .sub-menu-link:hover p {
+      font-weight: 600;
+   }
+   
+   .cancel {
+      float: left;
+      margin: 10px 0 0 18.2%;
+   }
+   
+   .done {
+      float: right;
+      margin: 10px 18.2% 0 0 ;
+   }
+/* user pic */
 /* end header */
 /* Start landing */
 .landing {
