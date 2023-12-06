@@ -249,7 +249,7 @@ margin-right: 10px;
    outline: 0;
    color: white;
 }
-::placeholder {
+.search-box ::placeholder {
    color: #fff;
 }
 
@@ -766,6 +766,9 @@ animation: bouncing 1.5s infinite;
    border-bottom: 1px solid #ccc;
    background-color: #f9f9f9;
    caret-color: var(--main-color);
+}
+.discount .input::placeholder {
+   color: #F48E06;
 }
 .discount .form textarea.input {
    resize: none;
