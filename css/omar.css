@@ -120,12 +120,20 @@ ul {
    overflow: hidden;
    transition: var(--main-transition);
 }
-@media (max-width: 767px) {
+@media (max-width: 420px) {
    .header .main-nav > li > a {
       padding: 10px;
       font-size: 16px;
       height: 40px;
       bottom: -40px;
+   }
+}
+@media (min-width: 420px) and (max-width: 767px) {
+   .header .main-nav > li > a {
+      padding: 10px;
+      font-size: 16px;
+      height: 40px;
+      /* bottom: -40px; */
    }
 }
 .header .main-nav > li > a::before {
@@ -221,12 +229,63 @@ font-weight: bold;
 .header .mega-menu .links li a i {
 margin-right: 10px;
 }
+/* search box */
+.search-box {
+   width: 200px;
+   height: 40px;
+   border-radius: 5px;
+   background-color: var(--main-color-alt);
+}
+.row {
+   display: flex;
+   align-items: center;
+   padding: 5px 10px;
+}
+.search-box input {
+   background-color: var(--main-color-alt);
+   border: none;
+   display: flex;
+   align-items: center;
+   outline: 0;
+   color: white;
+}
+::placeholder {
+   color: #fff;
+}
+
+.search-box button  {
+   background-color: var(--main-color-alt);
+   width: 10px;
+   border: none;
+   outline: 0;
+   color: #fff;
+
+}
+/* small screen */
+@media (max-width: 768px) {
+   .search-box {
+      display: none;
+   }
+}
+/* medium screen */
+@media (max-width: 992px) {
+   .search-box {
+      display: none;
+   }
+}
+/* Large screen */
+@media (max-width: 1200px) {
+   .search-box {
+      display: none;
+   }
+}
+/* end search box */
 /* user pic */
 .user-pic {
    width: 50px;
    position: relative;
 }
-@media (max-width: 767px) {
+@media (max-width: 420px) {
    .user-pic {
       left: 300px;
       top: -84px;
