@@ -816,4 +816,65 @@ animation: bouncing 1.5s infinite;
    width: 350px;
    }
 }
- /* End Discount */
+/* End Discount */
+/* statrt english exam */
+.english {
+   padding-top: var(--main-padding-top);
+   padding-bottom: var(--main-padding-bottom);
+   position: relative;
+   height: 900px;
+   margin: 20px 150px;
+   border-radius: 8px;
+   border: 3px solid var(--main-color);
+}
+.english .container {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   gap: 40px;
+}
+.english h2 {
+   margin: 0 auto 80px;
+   line-height: 96px;
+   padding: 10px 20px;
+   font-size: 54px;
+   font-weight: 300;
+   width: fit-content;
+   position: relative;
+   color: #9E1338;
+   margin-bottom: 20px;
+}
+.english .form form {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   justify-content: space-around;
+}
+.english .form input{
+   width: 300px;
+   height: 40px;
+   background: #FFF;
+   border-radius: 5px;
+   border: 3px solid #9E1338;
+   
+}
+.english .form input::placeholder {
+   color: #FE8100;
+   font-family: Poppins;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 300;
+   line-height: normal;
+   text-transform: capitalize;
+   padding-left: 10px;
+}
+.english .container .question {
+   width: 1100px;
+   
+}
+.english .container .question .point {
+   display: flex;
+   justify-content: space-between;
+}
+/* end english exam */
