@@ -898,7 +898,7 @@ animation: bouncing 1.5s infinite;
 }
 @media (max-width: 420px) {
    .english .container .question {
-      width: 390px;
+      width: 370px;
    }
 }
 .english .container .question .point {
@@ -917,13 +917,13 @@ animation: bouncing 1.5s infinite;
 }
 @media (max-width: 420px) {
    .english .container .question .point {
-      font-size: 19px;
+      font-size: 17px;
       margin-left: -15px;
    }
 }
 @media (max-width: 420px) {
    .english .container .question .point h4{
-      font-size: 18px;
+      font-size: 17px;
       width: 150px;
    }
 }
