@@ -529,7 +529,7 @@ animation: bouncing 1.5s infinite;
    font-size: 64px;
    width: fit-content;
    position: relative;
-   color: #9E1338;
+   color: var(--main-color-alt);
    margin-bottom: 20px;
 }
 .exam .box {
@@ -554,18 +554,20 @@ animation: bouncing 1.5s infinite;
 }
 .exam .box:hover {
    transform: translateY(-10px);
+   background-color: var(--main-color-alt);
+   color: #F48E06;
 }
 .exam .box:hover::before {
    width: 100%;
 }
-.exam .box > img {
+.exam .box img {
    margin: 30px auto 20px;
    display: block;
    text-align: center;
    width: 89.37px;
    height: 107.32px;
 }
-.exam .box > h3 {
+.exam .box h3 {
    text-align: center;
    /* margin: 20px 0 40px; */
    font-size: 32px;
@@ -573,7 +575,7 @@ animation: bouncing 1.5s infinite;
    line-height: 48px;
    color: var(--main-color);
 }
-.exam .box > p {
+.exam .box p {
    text-align: center;
    font-size: 24px;
    font-weight: 300;
@@ -789,7 +791,7 @@ animation: bouncing 1.5s infinite;
    cursor: pointer;
    transition: var(--main-transition);
    border-radius: 19px;
-   background: #9E1338;
+   background: var(--main-color-alt);
 }
 .discount .form [type="submit"]:hover {
    background-color: var(--main-color);
@@ -822,15 +824,16 @@ animation: bouncing 1.5s infinite;
    padding-top: var(--main-padding-top);
    padding-bottom: var(--main-padding-bottom);
    position: relative;
-   height: 900px;
+   height: 1260px;
    margin: 20px 150px;
    border-radius: 8px;
    border: 3px solid var(--main-color);
 }
-.english .container {
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-   gap: 40px;
+@media (max-width: 420px) {
+   .english {
+      margin: 20px 0;
+      height: 1150px;
+   }
 }
 .english h2 {
    margin: 0 auto 80px;
@@ -840,8 +843,17 @@ animation: bouncing 1.5s infinite;
    font-weight: 300;
    width: fit-content;
    position: relative;
-   color: #9E1338;
+   color: var(--main-color-alt);
    margin-bottom: 20px;
+}
+@media (max-width: 420px) {
+   .english h2 {
+      line-height: 46px;
+      font-size: 44px;
+   }
+}
+.english .container {
+   padding-top: 50px;
 }
 .english .form form {
    display: flex;
@@ -851,13 +863,24 @@ animation: bouncing 1.5s infinite;
    text-align: center;
    justify-content: space-around;
 }
+@media (max-width: 420px) {
+   .english .form form {
+      flex-direction: column;
+      gap: 15px;
+   }
+}
 .english .form input{
    width: 300px;
    height: 40px;
    background: #FFF;
    border-radius: 5px;
-   border: 3px solid #9E1338;
+   border: 3px solid var(--main-color-alt);
    
+}
+@media (max-width: 420px) {
+   .english .form input {
+      width: 250px;
+   }
 }
 .english .form input::placeholder {
    color: #FE8100;
@@ -873,8 +896,89 @@ animation: bouncing 1.5s infinite;
    width: 1100px;
    
 }
+@media (max-width: 420px) {
+   .english .container .question {
+      width: 390px;
+   }
+}
 .english .container .question .point {
    display: flex;
    justify-content: space-between;
+}
+.english .container .question .point {
+   color: var(--main-color-alt);
+   text-align: center;
+   font-family: Poppins;
+   font-size: 25px;
+   font-style: normal;
+   font-weight: 300;
+   line-height: normal;
+   text-transform: capitalize;
+}
+@media (max-width: 420px) {
+   .english .container .question .point {
+      font-size: 19px;
+      margin-left: -15px;
+   }
+}
+@media (max-width: 420px) {
+   .english .container .question .point h4{
+      font-size: 18px;
+      width: 150px;
+   }
+}
+.english .container .question form label {
+   color: #E05357;
+   text-align: center;
+   font-family: Poppins;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 300;
+   line-height: normal;
+   text-transform: capitalize;
+}
+@media (max-width: 420px) {
+   .english .container .question form label{
+      font-size: 20px;
+   }
+}
+.english .container .question form input {
+   width: 20px;
+   height: 20px;
+   margin-right: 10px;
+   background-color: #9E1338;
+}
+@media (max-width: 420px) {
+   .english .container .question form input{
+      width: 15px;
+      height: 15px;
+   }
+}
+.english .button-send form {
+   display: flex;
+   justify-content: center;
+   padding-top: 100px;
+}
+.english .button-send form [type="submit"] {
+   display: block;
+   width: 400px;
+   padding: 15px;
+   background-color: var(--main-color);
+   color: white;
+   font-weight: bold;
+   font-size: 20px;
+   border: none;
+   cursor: pointer;
+   transition: var(--main-transition);
+   border-radius: 19px;
+   background: var(--main-color-alt);
+}
+@media (max-width: 420px) {
+   .english .button-send form [type="submit"]{
+      width: 300px;
+   }
+}
+.english form [type="submit"]:hover {
+   background-color: var(--main-color);
 }
 /* end english exam */
