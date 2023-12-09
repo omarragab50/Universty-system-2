@@ -824,7 +824,7 @@ animation: bouncing 1.5s infinite;
    padding-top: var(--main-padding-top);
    padding-bottom: var(--main-padding-bottom);
    position: relative;
-   height: 1260px;
+   height: 1200px;
    margin: 20px 150px;
    border-radius: 8px;
    border: 3px solid var(--main-color);
@@ -832,7 +832,7 @@ animation: bouncing 1.5s infinite;
 @media (max-width: 420px) {
    .english {
       margin: 20px 0;
-      height: 1150px;
+      height: 1020px;
    }
 }
 .english h2 {
@@ -957,7 +957,7 @@ animation: bouncing 1.5s infinite;
 .english .button-send form {
    display: flex;
    justify-content: center;
-   padding-top: 100px;
+   padding-top: 50px;
 }
 .english .button-send form [type="submit"] {
    display: block;
