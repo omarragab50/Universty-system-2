@@ -966,7 +966,7 @@ animation: bouncing 1.5s infinite;
 @media (max-width: 420px) {
    .english .clock {
       width: 40px;
-      left: 110px;
+      left: 100px;
       bottom: 5px;
    }
 }
