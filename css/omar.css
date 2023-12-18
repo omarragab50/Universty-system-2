@@ -924,7 +924,7 @@ animation: bouncing 1.5s infinite;
    padding-top: var(--main-padding-top);
    padding-bottom: var(--main-padding-bottom);
    position: relative;
-   height: 1200px;
+   height: 1250px;
    margin: 20px 150px;
    border-radius: 8px;
    border: 3px solid var(--main-color);
@@ -932,7 +932,7 @@ animation: bouncing 1.5s infinite;
 @media (max-width: 420px) {
    .english {
       margin: 20px 0;
-      height: 1020px;
+      height: 1120px;
    }
 }
 .english h2 {
@@ -950,6 +950,47 @@ animation: bouncing 1.5s infinite;
    .english h2 {
       line-height: 46px;
       font-size: 44px;
+   }
+}
+.english .clock {
+   position: relative;
+   display: flex;
+   flex-direction:row;
+   align-items: center;
+   justify-content: center;
+   left: 1010px;
+   width: 43px;
+   bottom: 20px;
+   margin: 0;
+}
+@media (max-width: 420px) {
+   .english .clock {
+      width: 40px;
+      left: 110px;
+      bottom: 5px;
+   }
+}
+.english .timer {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   justify-content: start;
+   font-size: 40px;
+   font-weight: 400;
+   margin: 0;
+   padding-right: 50px;
+   bottom: 70px;
+   color: #9E1338;
+}
+@media (max-width: 420px) {
+   .english .timer {
+      font-size: 40px;
+      display: flex;
+      align-items: center;
+      padding-top: 20px;
+      margin: 0;
+      left: 30px;
    }
 }
 .english .container {
