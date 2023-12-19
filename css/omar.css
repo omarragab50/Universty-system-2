@@ -1123,3 +1123,27 @@ animation: bouncing 1.5s infinite;
    background-color: var(--main-color);
 }
 /* end english exam */
+
+/* buttom up */
+.up {
+   position: fixed;
+   bottom: 30px;
+   right: -50px;
+   background-color: var(--main-color-alt);
+   color: white;
+   font-weight: bold;
+   font-size: 30px;
+   padding: 5px;
+   border-radius: 4px;
+   font-family: Arial, Tahoma;
+   cursor: pointer;
+   transition: 0.2s;
+}
+@media (max-width: 420px) {
+   .up {
+      z-index: 3;
+   }
+}
+.up.show {
+   right: 10px;
+}
