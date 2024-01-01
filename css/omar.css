@@ -678,12 +678,18 @@ animation: bouncing 1.5s infinite;
    line-height: 48px;
    color: var(--main-color);
 }
+.exam .box h3:hover{
+   color: white;
+}
 .exam .box p {
    text-align: center;
    font-size: 24px;
    font-weight: 300;
    line-height: 36px;
    color: var(--main-color);
+}
+.exam .box p:hover{
+   color: white;
 }
 .exam .box .info {
    padding: 15px;
@@ -1286,7 +1292,8 @@ footer{
    display: flex;
    flex-wrap: wrap;
    margin-top: auto;
-   background-color: #2d2e33;
+   /* background-color: #2d2e33; */
+   background-color: #570e0e;
    padding: 60px 10%;
 }
 
