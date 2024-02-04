@@ -1131,6 +1131,101 @@ animation: bouncing 1.5s infinite;
 .english form [type="submit"]:hover {
    background-color: var(--main-color);
 }
+.mark {
+   height: 300px;
+   margin-top: 100px;
+}
+.mark .container{
+   display: flex;
+   width: 800px;
+   justify-content: space-between;
+   border: 4px solid #EC8E65;
+   border-radius: 20px;
+}
+@media (max-width: 420px) {
+   .mark .container{
+      width: 390px;
+      height: 200px;
+      
+   }
+}
+.mark .container .information h3 {
+   font-size: 22px;
+   font-weight: 300px;
+   color: #9E1338;
+}
+@media (max-width: 420px) {
+   .mark .container .information h3{
+      font-size: 17px;
+      font-weight: 300px;
+   }
+}
+.mark .container .true {
+   color: #00D46E;
+   font-size: 22px;
+}
+@media (max-width: 420px) {
+   .mark .container .true {
+      font-size: 20px;
+      padding: 0 5px;
+   }
+}
+.mark .container .true .false {
+   color: #F70B0B;
+   font-size: 30px;
+}
+@media (max-width: 420px) {
+   .mark .container .true .false {
+      font-size: 22px;
+      padding: 0 5px;
+   }
+}
+.mark .product-inf {
+   /* text-align: center; */
+   padding-top: 18px;
+}
+.mark .product-inf__percent {
+   font-weight: 700;
+   font-size: 22px;
+   letter-spacing: 1px;
+   margin-bottom: 12px;
+   font-family: "Dosis", sans-serif;
+   position: relative;
+}
+
+.mark .product-inf__percent circle {
+   transform: rotate(180deg) scaleY(-1);
+   transform-origin: 50%;
+   color: black;
+}
+
+.mark .product-inf__percent-txt {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.mark .product-inf__title {
+   font-family: "Dosis", sans-serif;
+   font-weight: 700;
+   letter-spacing: 2px;
+   font-size: 18px;
+}
+
+.mark .product-img {
+   position: absolute;
+   z-index: 2;
+   width: 500px;
+   left: 25%;
+   transform: translateX(-45%);
+   max-height: 500px;
+   height: 100%;
+   pointer-events: none;
+}
+.mark .product-inf__percent-txt {
+   color: #9E1338;
+}
 /* end english exam */
 
 /* buttom up */
