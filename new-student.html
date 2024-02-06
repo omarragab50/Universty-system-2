@@ -21,7 +21,7 @@
       <a href="index.html" class="logo">CHI<img src="imgs/chi-logo-1 2.jpg" alt=""></a>
       <ul class="main-nav">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">About</a></li>
         <li><a href="#features">Blog</a></li>
         <li><a href="contact_us.html">Contact Us</a></li>
         <li>
@@ -65,7 +65,7 @@
                 <a href="#pricing"><i class="far fa-user fa-fw"></i> Entry of doctors</a>
               </li>
               <li>
-                <a href="new-student.html"><i class="far fa-chart-bar fa-fw"></i> Institute departments</a>
+                <a href="#pricing"><i class="far fa-chart-bar fa-fw"></i> Institute departments</a>
               </li>
               <li>
                 <a href="#pricing"><i class="fas fa-server fa-fw"></i> Metting</a>
@@ -89,7 +89,7 @@
           <div class="sub-menu">
               <div class="user-info">
                   <img src="imgs/Ellipse 6237.jpg">
-                  <h2>Sara Student</h2>
+                  <h2>Your Profile</h2>
               </div>
               <hr>
               <a href="#" class="sub-menu-link">
@@ -121,101 +121,63 @@
     </div>
   </div>
   <!-- end header -->
-  <!-- Start landing -->
-<div class="landing">
-  <div class="container">
-    <div class="text">
-      <h1>Cairo Higher Institute</h1>
-      <p>Cairo Higher Institute of Engineering, Computer Science and Management offers you all the services provided by the largest universities. </p>
-      <button><a href="login.html">Login</a></button>
+  <!-- Start crds -->
+  <div class="crud">
+    <div class="head">
+      <h2>New student </h2>
     </div>
-    <div class="image">
-      <img src="imgs/Group 1000006244.png" alt="">
+    <div class="inputs">
+      <div class="price">
+        <input type="number" id="id" placeholder="id">
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="email@gmail.com">
+        <input type="number" id="phone" placeholder="phone">
+      </div>
+      <div class="price">
+        <input type="number" id="year" placeholder="year">
+        <input type="number" id="Score" placeholder="Score">
+        <input type="date" id="date" placeholder="date">
+        <input type="text" id="Departement" placeholder="Departement">
+      </div>
+      <input class="adress" type="text" id="adress" placeholder="Adress">
+      <div><button id="submit">Create</button></div>
     </div>
-  </div>
-  <a href="#about" class="go-down">
-    <i class="fas fa-angle-double-down fa-2x"></i>
-  </a>
-</div>
-  <!-- End landing -->
-      <!-- Start Work Steps -->
-      <div class="about" id="about">
-        <div class="container">
-          <img decoding="async" src="imgs/Group 1000006246.png" alt="" class="image" />
-          <div class="info">
-            <h1>Why choose us?</h1>
-            <div class="box">
-              <img decoding="async" src="imgs/work-steps-1.png" alt="" />
-              <div class="text">
-                <h3>Our advantages</h3>
-                <p>
-                  It is an institute equivalent to Ain Shams College and includes a teaching team at the highest level of the greatest doctors and teaching assistants
-                </p>
-              </div>
-            </div>
-            <div class="box">
-              <img decoding="async" src="imgs/work-steps-2.png" alt="" />
-              <div class="text">
-                <h3>Our departments</h3>
-                <p>
-                  We include many departments, such as: the Engineering Department, the Computer Science Department, and the Management Department.
-                </p>
-              </div>
-            </div>
-            <div class="box">
-              <img decoding="async" src="imgs/work-steps-3.png" alt="" />
-              <div class="text">
-                <h3>Developement</h3>
-                <p>
-                  It has the latest scientific means and methods to teach and develop the student. We have laboratories of the highest level to prepare the student for the labor market to work in the largest companies.
-                </p>
-              </div>
-            </div>
-          </div>
+
+    <div class="outputs">
+      <div class="searchBlock">
+        <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="search">
+        <div class="btnSearch">
+          <button onclick="getSearchMood(this.id)" id="searchId">Search By Id</button>
+          <button onclick="getSearchMood(this.id)" id="searchName">Search By Name</button>
         </div>
       </div>
-      <!-- End Work Steps -->  
-      <!-- start footer -->
-      <footer>
-        <div class="footer-col">
-            <h4>Institute departments</h4>
-            <ul>
-                <li>engineering</li>
-                <li>Computer Science</li>
-                <li>Administration</li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>quick links</h4>
-            <ul>
-                <li><a href="index.html">-> home</a></li>
-                <li><a href="#">-> about us</a></li>
-                <li><a href="#">-> blog</a></li>
-                <li><a href="contact_us.html">-> contact us</a></li>
-                <li><a href="index.html">-> chooises</li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>Contact Info</h4>
-            <ul class="icon">
-              <li><a href="#"><i class="fa-solid fa-phone"></i>+20 01145484026</a></li>
-                <li><a href="#"><i class="far fa-envelope fa-lg"></i>omarragb@Gmail.Com</a></li>
-                <li><a href="https://maps.app.goo.gl/TsZwYYBGU7qdQv9D8" target="_blank"><i class="fa-solid fa-location-dot"></i>ELTAGMO - 9st - Part 7100</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>follow us</h4>
-            <div class="links">
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </footer>
-      <!-- end footer -->
-      <!-- button scroll -->
-  <span class="up">UP</span>
-  <script src="main.js"></script>
+      <div id="deleteAll">
+
+      </div>
+      <table>
+        <tr>
+          <th>#</th>
+          <th>id</th>
+          <th>name</th>
+          <th>email</th>
+          <th>phone</th>
+          <th>year</th>
+          <th>score</th>
+          <th>date</th>
+          <th>depatment</th>
+          <th>adress</th>
+          <th>update</th>
+          <th>delete</th>
+        </tr>
+        <tbody id="tbody">
+          
+          
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+  <!-- End Cards -->
+  <script src="curds.js"></script>
 </body>
 </html>
