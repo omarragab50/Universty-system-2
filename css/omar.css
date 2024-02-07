@@ -1493,7 +1493,7 @@ footer .links a:hover{
 
 /* statrt curd */
 .crud {
-   width: 80%;
+   width: 100%;
    margin: auto;
    background: linear-gradient(180deg, rgba(158, 19, 56, 0.20) 1.38%, rgba(189, 187, 179, 0.2) 99.64%);
    border-radius: 20px;

@@ -9,6 +9,12 @@ let Departement = document.getElementById('Departement');
 let adress = document.getElementById('adress');
 let submit = document.getElementById('submit');
 
+
+let secondary_school = document.getElementById('secondary_school');
+let Section_school = document.getElementById('Section_school');
+let National_id = document.getElementById('National_id');
+let age = document.getElementById('age');
+
 let mood = 'create';
 let tmp;
 
@@ -32,6 +38,10 @@ submit.onclick = function(){
         Score:Score.value,
         date:date.value,
         Departement:Departement.value,
+        secondary_school:secondary_school.value,
+        Section_school:Section_school.value,
+        National_id:National_id.value,
+        age:age.value,
         adress:adress.value,
     }
 
@@ -75,6 +85,10 @@ function clearData(){
     Score.value = '';
     date.value = '';
     Departement.value = '';
+    secondary_school.value = '';
+    Section_school.value = '';
+    National_id.value = '';
+    age.value = '';
     adress.value = '';
 }
 
@@ -96,6 +110,10 @@ function showData()
             <td>${dataPro[i].Score}</td>
             <td>${dataPro[i].date}</td>
             <td>${dataPro[i].Departement}</td>
+            <td>${dataPro[i].secondary_school}</td>
+            <td>${dataPro[i].Section_school}</td>
+            <td>${dataPro[i].National_id}</td>
+            <td>${dataPro[i].age}</td>
             <td>${dataPro[i].adress}</td>
             <td><button onclick="updateData(${i})" id="update">update</button></td>
             <td><button onclick="deleteData( ${i})" id="delete">delete</button></td>
@@ -145,6 +163,10 @@ function updateData(i){
     Score.value = dataPro[i].Score;
     date.value = dataPro[i].date;
     Departement.value = dataPro[i].Departement;
+    secondary_school.value = dataPro[i].secondary_school;
+    Section_school.value = dataPro[i].Section_school;
+    National_id.value = dataPro[i].National_id;
+    age.value = dataPro[i].age;
     adress.value = dataPro[i].adress;
     submit.innerHTML = 'updade';
     mood = 'update'
@@ -194,6 +216,10 @@ function searchData(value)
             <td>${dataPro[i].Score}</td>
             <td>${dataPro[i].date}</td>
             <td>${dataPro[i].Departement}</td>
+            <td>${dataPro[i].secondary_school}</td>
+            <td>${dataPro[i].Section_school}</td>
+            <td>${dataPro[i].National_id}</td>
+            <td>${dataPro[i].age}</td>
             <td>${dataPro[i].adress}</td>
             <td><button onclick="updateData(${i})" id="update">update</button></td>
             <td><button onclick="deleteData( ${i})" id="delete">delete</button></td>
@@ -216,6 +242,10 @@ function searchData(value)
             <td>${dataPro[i].Score}</td>
             <td>${dataPro[i].date}</td>
             <td>${dataPro[i].Departement}</td>
+            <td>${dataPro[i].secondary_school}</td>
+            <td>${dataPro[i].Section_school}</td>
+            <td>${dataPro[i].National_id}</td>
+            <td>${dataPro[i].age}</td>
             <td>${dataPro[i].adress}</td>
             <td><button onclick="updateData(${i})" id="update">update</button></td>
             <td><button onclick="deleteData( ${i})" id="delete">delete</button></td>
