@@ -121,119 +121,63 @@
     </div>
   </div>
   <!-- end header -->
-  <!-- Start Exam -->
-  <div class="english" id="exam">
-    <h2>English Exam</h2>
-    <img class="clock" src="imgs/Frame.jpg" alt="">
-    <p class="timer" id="countdown">30:00</p>
-    <div class="form">
-      <form action="">
-        <input class="input" type="text" placeholder="Name student :" name="name" />
-        <input class="input" type="text" placeholder="ID :" name="name" />
-      </form>
+  <!-- Start crds -->
+  <div class="crud">
+    <div class="head">
+      <h2>add subject </h2>
     </div>
-    <div class="container">
-      <div class="question">
-        <div class="point">
-          <p> Qi) Making a show of being morally superior to other people is </p>
-          <h4>(1 point)</h4>
-        </div>
-        <form>
-          <input type="radio" id="html" name="fav_language" value="HTML">
-          <label for="html">to other people is</label><br>
-          <input type="radio" id="css" name="fav_language" value="CSS">
-          <label for="css">to other people is</label><br>
-          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-          <label for="javascript">to other people is</label><br>
-          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-          <label for="javascript">to other people is</label>
-        </form>
+    <div class="inputs">
+      <div class="price">
+        <input type="text" id="subject_name" placeholder="subject_name">
+        <input type="text" id="doctor_of_subject" placeholder="doctor_of_subject">
+        <input type="number" id="clock_of_subject" placeholder="clock_of_subject">
+        <input type="number" id="semster_of_subject" placeholder="semster_of_subject">
       </div>
-      <div class="question">
-        <div class="point">
-          <p> Qii) Making a show of being morally superior to other people is </p>
-          <h4>(1 point)</h4>
-        </div>
-        <form>
-          <input type="radio" id="html" name="fav_language" value="HTML">
-          <label for="html">true</label><br>
-          <input type="radio" id="css" name="fav_language" value="CSS">
-          <label for="css">false</label><br>
-        </form>
+      <div class="price">
+        <input type="text" id="student_name" placeholder="student_name">
+        <input type="number" id="student_id" placeholder="student_id">
+        <input type="text" id="Departement" placeholder="Departement">
+        <input type="number" id="total_colck_of_subject" placeholder="total_colck_of_subject">
       </div>
-      <div class="question">
-        <div class="point">
-          <p> Qiii) Making a show of being morally superior to other people is </p>
-          <h4>(1 point)</h4>
-        </div>
-        <form>
-          <input type="radio" id="html" name="fav_language" value="HTML">
-          <label for="html">to other people is</label><br>
-          <input type="radio" id="css" name="fav_language" value="CSS">
-          <label for="css">to other people is</label><br>
-          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-          <label for="javascript">to other people is</label><br>
-          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-          <label for="javascript">to other people is</label>
-        </form>
-      </div>
-      <div class="question">
-        <div class="point">
-          <p> Qiv) Making a show of being morally superior to other people is </p>
-          <h4>(1 point)</h4>
-        </div>
-        <form>
-          <input type="radio" id="html" name="fav_language" value="HTML">
-          <label for="html">to other people is</label><br>
-          <input type="radio" id="css" name="fav_language" value="CSS">
-          <label for="css">to other people is</label><br>
-          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-          <label for="javascript">to other people is</label><br>
-          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-          <label for="javascript">to other people is</label>
-        </form>
-      </div>
-      <div class="button-send">
-        <form action="">
-          <input type="submit" value="Send" />
-        </form>
-      </div>
+      <input class="adress" type="date" id="date_of_addition" placeholder="date_of_addition">
+      <input class="adress" type="text" id="employee_name_add" placeholder="employee_name_add">
+      <div><button id="submit">Create</button></div>
     </div>
-    <div class="mark">
-      <div class="container">
-        <div class="information">
-          <h3>subject name: english </h3>
-          <h3>student name: youssef </h3>
-          <h3>student id:20202002 </h3>
+
+    <div class="outputs">
+      <div class="searchBlock">
+        <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="search">
+        <div class="btnSearch">
+          <button onclick="getSearchMood(this.id)" id="searchId">Search By Id</button>
+          <button onclick="getSearchMood(this.id)" id="searchName">Search By Name</button>
         </div>
-        <div class="true">
-          <h3><i class="fa-solid fa-check"></i>   :  16</h3>
-          <h3 class="false"><i class="fa-solid fa-xmark"></i>   :   4</h3>
-        </div>
-        <div class="product-inf">
-          <div class="product-inf__percent">
-              <div class="product-inf__percent-circle">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"
-                      viewBox="0 0 100 100">
-                      <defs>
-                          <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                              <stop offset="0%" stop-color="#0c1e2c" stop-opacity="0" />
-                              <stop offset="100%" stop-color="#cb2240" stop-opacity="1" />
-                          </linearGradient>
-                      </defs>
-                      <circle cx="50" cy="50" r="47" stroke-dasharray="240, 300"
-                          stroke="#cb2240" stroke-width="4" fill="none" />
-                  </svg>
-              </div>
-              <div class="product-inf__percent-txt">
-                  80%
-              </div>
-          </div>
       </div>
+      <div id="deleteAll">
+
       </div>
+      <table>
+        <tr>
+          <th>#</th>
+          <th>subject_name</th>
+          <th>doctor_of_subject</th>
+          <th>clock_of_subject</th>
+          <th>semster</th>
+          <th>student_name</th>
+          <th>s_id</th>
+          <th>Departement</th>
+          <th>t_c_of_sub</th>
+          <th>date_of_addition</th>
+          <th>employee_name_add</th>
+        </tr>
+        <tbody id="tbody">
+          
+          
+        </tbody>
+      </table>
     </div>
+
   </div>
-  <!-- End Exam -->
-  <script src="js/main.js"></script>
+  <!-- End Cards -->
+  <script src="js/add_subject.js"></script>
 </body>
 </html>
