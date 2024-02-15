@@ -124,28 +124,26 @@
   <!-- Start crds -->
   <div class="crud">
     <div class="head">
-      <h2>Add payment </h2>
+      <h2>Add book </h2>
     </div>
     <div class="inputs">
       <div class="price">
         <input type="text" id="student_name" placeholder="student_name">
         <input type="number" id="student_id" placeholder="student_id">
-        <input type="number" id="semester" placeholder="semester">
-        <input type="text" id="Departement" placeholder="Departement">
+        <input type="number" id="student_section" placeholder="student_section">
+        <input type="date" id="date_of_addition" placeholder="date_of_addition">
       </div>
       <div class="price">
-        <input type="number" id="total_clock_subject" placeholder="total_clock_subject">
-        <input type="text" id="status" placeholder="status">
-        <input type="number" id="amount_paid_today" placeholder="amount_paid_today">
-        <input type="text" id="payment_type" placeholder="payment_type">
+        <input type="text" id="employee_name_add" placeholder="employee_name_add">
+        <input type="number" id="book_price" placeholder="book_price">
+        <input type="number" id="money_payment" placeholder="money_payment">
+        <input type="text" id="student_book" placeholder="student_book">
       </div>
       <div class="price">
-        <input type="text" id="payment_status" placeholder="payment_status">
-        <input type="text" id="payment_method" placeholder="payment_method">
-        <input type="number" id="remaining_money" placeholder="remaining_money">
-        <input type="number" id="count_money" placeholder="count_money">
+        <input class="text" type="text" id="employee" placeholder="employee">
+        <input class="text" type="text" id="doctor" placeholder="doctor">
+        <input class="text" type="text" id="assistant" placeholder="assistant">
       </div>
-      <input class="adress" type="number" id="total_money" placeholder="total_money">
       <div><button id="submit">Create</button></div>
     </div>
 
@@ -163,21 +161,17 @@
       <table>
         <tr>
           <th>#</th>
-          <th>st_name</th>
-          <th>st_id</th>
-          <th>semester</th>
-          <th>department</th>
-          <th>total_colck</th>
-          <th>status</th>
-          <th>amount_paid</th>
-          <th>pay_type</th>
-          <th>pay_status</th>
-          <th>pay_method</th>
-          <th>remain_money</th>
-          <th>cou_money</th>
-          <th>total</th>
-          <th>update</th>
-          <th>delete</th>
+          <th>student_name</th>
+          <th>student_id</th>
+          <th>student_section</th>
+          <th>date_of_addition</th>
+          <th>employee_name_add</th>
+          <th>book_price</th>
+          <th>money_payment</th>
+          <th>student_book</th>
+          <th>employee</th>
+          <th>doctor</th>
+          <th>assistant</th>
         </tr>
         <tbody id="tbody">
           
@@ -188,6 +182,6 @@
 
   </div>
   <!-- End Cards -->
-  <script src="js/add_payment.js"></script>
+  <script src="js/add_book.js"></script>
 </body>
 </html>
