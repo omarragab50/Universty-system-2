@@ -2118,3 +2118,114 @@ form button {
     border: 7px solid #F48E06;
 }
 /* end subject */
+/* start task */
+.but-task {
+   padding: 80px 80px;
+   margin: 40px 40px;
+}
+.task {
+   position: relative;
+   background: #9E1338;
+   color: white;
+   width: 150px;
+   text-align: center;
+   font-weight: bold;
+   cursor: pointer;
+   margin-right: 150px;
+   margin-left: 200px;
+   letter-spacing: 1px;
+   border-radius: 3px;
+}
+.but-done {
+   position: relative;
+   background: #9E1338;
+   color: white;
+   width: 150px;
+   text-align: center;
+   font-weight: bold;
+   cursor: pointer;
+   margin-right: 150px;
+   margin-left: 40px;
+   letter-spacing: 1px;
+   border-radius: 3px;
+}
+.not-done {
+   position: relative;
+   background: #9E1338;
+   color: white;
+   width: 150px;
+   text-align: center;
+   font-weight: bold;
+   cursor: pointer;
+   margin-right: 150px;
+   margin-left: 40px;  
+   letter-spacing: 1px;
+   border-radius: 3px;
+}
+.task-border {
+   padding: 70px;
+   width: 70%;
+   margin-left: 200px;
+   margin-top: -80px;
+   border-radius: 20px;
+   background-color: #fff;
+   border: 7px solid #F48E06;
+}
+.h-task {
+   font-size: 25px;
+}
+p {
+   font-size: 20px;
+}
+.date {
+   text-align: right;
+   margin-right: 400px;
+   margin-top: -95px;
+}
+.check {
+   text-align: right;
+   font-size: 40px;
+   margin-right: 200px;
+   margin-top: -80px;
+}
+.files {
+   font-size: 30px;
+   margin-left: 900px;
+   margin-top: -80px;
+}
+.upload {
+   padding: 10px;
+}
+.edit {
+   padding: 10px;
+}
+.delete {
+   padding: 10px;
+}
+.task-line {
+   border: 2px solid #F48E06;
+   width: 116%;
+   margin-left: -70px;
+}
+.files2 {
+   font-size: 30px;
+   margin-left: 900px;
+   margin-top: -60px;  
+}
+.check2 {
+   text-align: right;
+   font-size: 40px;
+   margin-right: 200px;
+   margin-top: -60px;
+   margin-bottom: -20px;
+}
+.files3 {
+   font-size: 30px;
+   margin-left: 900px;
+   margin-top: -60px;  
+}
+.files4 {
+   font-size: 30px;
+   margin-left: 900px;
+   margin-top: -60px;  
+}
