@@ -2117,6 +2117,9 @@ form button {
     background-color: #fff;
     border: 7px solid #F48E06;
 }
+.border input {
+   border: none;
+}
 /* end subject */
 /* start task */
 .but-task {
