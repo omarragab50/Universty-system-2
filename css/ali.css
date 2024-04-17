@@ -2399,7 +2399,20 @@ label {
    color: #9E1338;
    font-size: 25px;
 }
+.qr-code{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
 .qr-code img {
    width: 300px;
    margin-left: 100px ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.qr-code input{
+   display: flex;
+   
 }
