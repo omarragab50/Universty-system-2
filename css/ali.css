@@ -2393,3 +2393,13 @@ label {
    margin-left: 450px;
    padding-top: 40px;
 }
+/* start attend */
+.h-attends {
+   text-align: center;
+   color: #9E1338;
+   font-size: 25px;
+}
+.qr-code img {
+   width: 300px;
+   margin-left: 100px ;
+}
